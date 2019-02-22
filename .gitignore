@@ -59,3 +59,10 @@ typings/
 
 # next.js build output
 .next
+
+# VsCode Stuff
+.vscode
+.settings
+
+# Webpack Build
+dist
