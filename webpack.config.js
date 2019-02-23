@@ -1,14 +1,16 @@
-const HTMLWebpackPlugin = require('html-webpack-plugin');
+const wpMerge = require('webpack-merge');
 
-module.exports = {
-    devServer: {
-        stats: "errors-only",
+const commonConfig = require('./webpack/webpack.common');
+const { PROD } = require('./webpack/webpack.constants');
 
-        host: process.env.HOST | 'localhost',
-        port: process.env.PORT,
-        overlay: true,
-    },
-    plugins: [
-        new HTMLWebpackPlugin({ title: 'Webpack html' })
-    ]
+module.exports = (mode) => {
+    const envConfig = mode === PROD ?
+        require('./webpack/webpack.prod') :
+        require('./webpack/webpack.dev');
+
+    return wpMerge([
+        { mode },
+        commonConfig,
+        envConfig
+    ]);
 };
