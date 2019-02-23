@@ -4,7 +4,8 @@
   "description": "Repository for the Pass it on: Webpack, Tips, Tricks and Tweaks. It's mainly a frontend project that will use the webpack functional library as a git module.",
   "scripts": {
     "build": "webpack --mode production",
-    "start": "webpack-dev-server --mode development",
+    "start": "nodemon --watch webpack.config.js --exec \"npm run wds\"",
+    "wds": "webpack-dev-server --mode development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,6 +21,7 @@
   "homepage": "https://github.com/jorgeorm/webpack-ttt#readme",
   "devDependencies": {
     "html-webpack-plugin": "^3.2.0",
+    "nodemon": "^1.18.10",
     "webpack": "^4.29.5",
     "webpack-cli": "^3.2.3",
     "webpack-dev-server": "^3.2.0"
