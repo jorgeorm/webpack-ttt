@@ -1,0 +1,3 @@
+[submodule "webpack/lib"]
+	path = webpack/lib
+	url = git@github.com:jorgeorm/webpack-lib.git

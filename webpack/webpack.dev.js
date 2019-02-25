@@ -1,10 +1,7 @@
-module.exports = {
-    devServer: {
-        stats: "errors-only",
+const { styles, utils } = require('webpack-lib');
+const wpMerge = require('webpack-merge');
 
-        host: process.env.HOST || 'localhost',
-        port: process.env.PORT,
-
-        overlay: true,
-    }
-}
+module.exports = wpMerge([
+    styles.loadCSS(),
+    utils.webpackDevServer()
+])

@@ -1,7 +1,8 @@
-const HTMLWebpackPlugin = require('html-webpack-plugin');
+const wpMerge = require('webpack-merge');
+const utils = require('webpack-lib').utils;
 
-module.exports = {
-    plugins: [
-        new HTMLWebpackPlugin({ title: 'Webpack html' })
-    ]
-};
+module.exports = wpMerge([
+    utils.htmlPlugin({
+        title: 'Webpack with library!!!'
+    })
+]);
