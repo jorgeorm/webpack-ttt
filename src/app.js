@@ -1,5 +1,6 @@
 import header from './components/header';
 import dashboard from './components/dashboard';
+import './app.css';
 
 export default () => {
     const app = document.createElement('div');

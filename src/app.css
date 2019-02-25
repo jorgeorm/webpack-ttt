@@ -1,0 +1,14 @@
+.app {
+    background: rgba(0,187,197, .3);
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.app__header {
+    flex: none;
+}
+
+.app__dashboard {
+    flex: 1 0 auto;
+}

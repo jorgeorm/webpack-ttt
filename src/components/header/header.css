@@ -1,0 +1,10 @@
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    background: rgba(128, 128, 128, .4);
+    font-family: 'Inconsolata', monospace;
+}
+
+.header__title {
+    margin: 0;
+}
