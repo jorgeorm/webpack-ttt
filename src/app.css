@@ -11,4 +11,5 @@
 
 .app__dashboard {
     flex: 1 0 auto;
+    padding: 0 1.5em;
 }
