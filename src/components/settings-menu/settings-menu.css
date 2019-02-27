@@ -1,0 +1,22 @@
+.modal {
+    background: rgb(250, 250, 250);
+}
+
+.modal-blackout {
+    background: rgba(0, 0, 0, .4);
+    transition: all 300 cubic-bezier(0.075, 0.82, 0.165, 1);
+    position: relative;
+}
+
+.modal-blackout__inner {
+    width: 300px;
+    position: absolute;
+}
+
+.settings-menu__modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}

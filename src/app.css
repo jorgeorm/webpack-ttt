@@ -3,6 +3,7 @@
     height: 100vh;
     display: flex;
     flex-flow: column nowrap;
+    font-size: 16px;
 }
 
 .app__header {
@@ -11,5 +12,11 @@
 
 .app__dashboard {
     flex: 1 0 auto;
-    padding: 0 1.5em;
+    padding: 0 .75em;
+}
+
+@media screen and (min-width: 768px) {
+    .app__dashboard {
+        padding: 0 2em;
+    }
 }
