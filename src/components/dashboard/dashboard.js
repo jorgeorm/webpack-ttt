@@ -1,6 +1,5 @@
 import './dashboard.css';
-
-const JS_IMG_URL = 'https://www.tutorialrepublic.com/lib/images/javascript-illustration.png';
+import jsIllustrationImg from '../../assets/images/javascript-illustration.png'
 
 export default ({ className }) => {
     const dashEl = document.createElement('div');
@@ -8,7 +7,7 @@ export default ({ className }) => {
     const paragraphEl = document.createElement('p');
     const cardEl = document.createElement('div');
 
-    jsImgEl.src = JS_IMG_URL;
+    jsImgEl.src = jsIllustrationImg;
     jsImgEl.className = 'pure-img card__img';
 
     paragraphEl.className = 'card__desc';
